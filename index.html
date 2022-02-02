@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"/>
+  <title>Survey Form</title>
+</head>
+<body>
+<div class="container">
+    <header >
+      <h1 id="title">Survey Form</h1>
+      <p id="description">please sign this form</p>
+    </header>
+  
+  <form id="survey-form">
+  <div class="form-group">
+  <label id="name-label" for="name">Name</label>
+  <input tpe="text" id="name" class="form-control" placeholder="Enter your name" required>
+  
+  </div>
+  <div class="form-group">
+  
+  <label id="email-label" for="email">Email</label>
+  <input type="email" id="email" class="form-control" placeholder="Enter your Email" required>
+  
+  </div>
+  <div class="form-group">
+  
+  <label id="number-label" for="age">Age</label>
+  <input type="number" id="number" min="13" max="100" class="form-control" placeholder="your age">
+  
+  </div>
+  <div class="form-group">
+  
+    <p>Do you have experience?</p>
+    <select id="dropdown" class="form-control" required>
+      <option disabled selected>Select option</option>
+      <option value="a lot">Yes,i have lots of experience</option>
+      <option value="a little">i have little exeperience</option>
+      <option value="zero">No,i have zero experience</option>
+    </select>
+  
+  </div>
+  <div class="form-group">
+  
+  <p>Your Gender</p>
+  <label>
+    <input name="gender" value="male" type="radio" class="input-radio" />Male </label>
+  </label>
+  
+  <label>
+    <input name="gender" value="female" type="radio" class="input-radio" />Female </label>
+  </label>
+  
+  <label>
+    <input name="gender" value="prefer-not" type="radio" class="input-radio" />prefer not to say </label>
+    </label>
+  
+  </div>
+  <div class="form-group">
+  <p>What is your current position?</p>
+  <label>
+    <input value="front-end" type="checkbox" class="input-checkbox">Front-End Developer</input>
+   </label>
+  
+   <label>
+    <input value="back-end" type="checkbox" class="input-checkbox">Back-End Developer</input>
+   </label>
+  
+   <label>
+    <input value="fullstack" type="checkbox" class="input-checkbox">Fullstack Developer</input>
+   </label>
+  
+   <label>
+    <input value="mobile-dev" type="checkbox" class="input-checkbox">Mobile Developer</input>
+   </label>
+  
+   <label>
+    <input value="web-dev" type="checkbox" class="input-checkbox">Web Developer</input>
+   </label>
+  
+   <label>
+    <input value="game-dev" type="checkbox" class="input-checkbox">Game Developer</input>
+   </label>
+  
+   <label>
+    <input value="software-dev" type="checkbox" class="input-checkbox">SoftWare Developer</input>
+   </label>
+  
+   <label>
+    <input value="security-dev" type="checkbox" class="input-checkbox">Security Developer</input>
+   </label>
+  
+   <label>
+    <input value="data-scientist" type="checkbox" class="input-checkbox">Data Scientist Developer</input>
+   </label>
+  
+   <label>
+    <input value="devops" type="checkbox" class="input-checkbox">DevOps Developer</input>
+   </label>
+  </div>
+  <div class="form-group">
+  <p>Any suggestions?</p>
+  <textarea id="suggestion" class="textarea"
+  placeholder="Enter your comment here">
+  </textarea>
+  
+  <div class="form-group">
+  <button type="submit" id="submit" >Submit</button>
+  </div>
+  </div>
+  </form>
+  </div>
+</body>
+</html>
